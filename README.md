@@ -1,1 +1,1 @@
-# ViT-V-Net_for_3D_Image_Registration
+# ViT-V-Net: Vision Transformer for Volumetric Medical Image Registration
