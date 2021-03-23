@@ -4,7 +4,7 @@ keywords: vision transformer, convolutional neural networks, image registration
 
 This is a **PyTorch** implementation of my short paper:
 
-<a href="">Chen, Junyu, et al. "ViT-V-Net: Vision Transformer for Unsupervised Volumetric Medical Image Registration. " Medical Imaging with Deep Learning (MIDL), 2021. (Under Review)</a>
+<a href="https://openreview.net/forum?id=h3HC1EU7AEz">Chen, Junyu, et al. "ViT-V-Net: Vision Transformer for Unsupervised Volumetric Medical Image Registration. " Medical Imaging with Deep Learning (MIDL), 2021. (Under Review)</a>
 
 
 ***train.py*** is the training script.
