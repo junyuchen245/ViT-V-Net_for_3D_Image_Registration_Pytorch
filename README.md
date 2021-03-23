@@ -7,8 +7,8 @@ This is a PyThorch implementation of my paper:
 <a href="">Chen, Junyu, et al. "ViT-V-Net: Vision Transformer for Unsupervised Volumetric Medical Image Registration. " Medical Imaging with Deep Learning (MIDL), 2021. (Under Review)</a>
 
 
-***train_vit-v-net.py*** is the training script.
-***ViT3D_skip.py*** contains ViT-V-Net model.
+***train.py*** is the training script.
+***models.py*** contains ViT-V-Net model.
 
 ## Model Architecture:
 ![](https://github.com/junyuchen245/ViT-V-Net_for_3D_Image_Registration/blob/main/figures/net_arch.jpg)
