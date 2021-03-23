@@ -10,6 +10,8 @@ This is a **PyTorch** implementation of my short paper:
 ***train.py*** is the training script.
 ***models.py*** contains ViT-V-Net model.
 
+Pretrained model can be obtained via: <a href="https://drive.google.com/file/d/11sbqFYFGtqwsRgmbYgEr18FiIVk6NMl5/view?usp=sharing">pretrained model</a>
+
 ## Model Architecture:
 ![](https://github.com/junyuchen245/ViT-V-Net_for_3D_Image_Registration/blob/main/figures/net_arch.jpg)
 
