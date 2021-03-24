@@ -11,4 +11,4 @@
 11. ```mri_convert  dataset_directory/img_name/mri/aseg.mgz --apply_transform dataset_directory/img_name/mri/transforms/talairach.xfm -o dataset_directory/img_name/mri/aseg_align.mgz``` -> This step does affine tranform to Talairach space for label image.
 12. ```mri_convert dataset_directory/img_name/mri/aseg_align.mgz  dataset_directory/img_name/mri/aseg_align.nii.gz``` -> This step converts the transformed label image from .mgz into .nii format.
 
-Note that these steps may take up to 16-30 hours per image base on our experience. Therefore running these commands in parallel on a server or a cluster is recommended.
+Note that these steps may take up to **16-30 hours per image** base on our experience. Therefore running these commands in parallel on a server or a cluster is recommended.
