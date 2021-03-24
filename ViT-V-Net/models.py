@@ -259,7 +259,7 @@ class DecoderCup(nn.Module):
         super().__init__()
         self.config = config
         self.down_factor = config.down_factor
-        head_channels = 512
+        head_channels = config.conv_first_channel
         self.img_size = img_size
         self.conv_more = Conv3dReLU(
             config.hidden_size,
@@ -376,7 +376,7 @@ class CNNEncoder(nn.Module):
         self.n_channels = n_channels
         decoder_channels = config.decoder_channels
         encoder_channels = config.encoder_channels
-        self.down_num = len(decoder_channels) - len(encoder_channels)
+        self.down_num = config.down_num
         self.inc = DoubleConv(n_channels, encoder_channels[0])
         self.down1 = Down(encoder_channels[0], encoder_channels[1])
         self.down2 = Down(encoder_channels[1], encoder_channels[2])
