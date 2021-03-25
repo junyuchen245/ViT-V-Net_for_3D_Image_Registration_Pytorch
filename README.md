@@ -24,7 +24,7 @@ This is a **PyTorch** implementation of my short paper:
 <img src="https://github.com/junyuchen245/ViT-V-Net_for_3D_Image_Registration/blob/main/figures/ViTVNet_res.jpg" width="700"/>
 
 ## Quantitative Results:
-<img src="https://github.com/junyuchen245/ViT-V-Net_for_3D_Image_Registration/blob/main/figures/dice_detail.jpg" width="700"/>
+<img src="https://github.com/junyuchen245/ViT-V-Net_for_3D_Image_Registration/blob/main/figures/dice_details.jpg" width="700"/>
 
 
 
