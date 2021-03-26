@@ -7,8 +7,8 @@
 7. ```mri_convert  dataset_directory/img_name/mri/brainmask.mgz --apply_transform dataset_directory/img_name/mri/transforms/talairach.xfm -o dataset_directory/img_name/mri/brainmask_align.mgz``` -> This step does affine tranform to Talairach space.
 8. ```mri_convert dataset_directory/img_name/mri/brainmask_align.mgz  dataset_directory/img_name/mri/brainmask_align.nii.gz``` -> This step converts the transformed image from .mgz into .nii format.
 9. ```recon-all -parallel -s dataset_directory/img_name.nii -subcortseg -subjid img_name``` -> This step does subcortical segmentation.
-10. ```mri_convert dataset_directory/img_name/mri/aseg.mgz  dataset_directory/img_name/mri/aseg.nii.gz``` -> This step converts label image from .mgz into .nii format.
-11. ```mri_convert  dataset_directory/img_name/mri/aseg.mgz --apply_transform dataset_directory/img_name/mri/transforms/talairach.xfm -o dataset_directory/img_name/mri/aseg_align.mgz``` -> This step does affine tranform to Talairach space for label image.
+10. ```mri_convert dataset_directory/img_name/mri/aseg.auto.mgz  dataset_directory/img_name/mri/aseg.nii.gz``` -> This step converts label image from .mgz into .nii format.
+11. ```mri_convert -rt nearest dataset_directory/img_name/mri/aseg.auto.mgz --apply_transform dataset_directory/img_name/mri/transforms/talairach.xfm -o dataset_directory/img_name/mri/aseg_align.mgz``` -> This step does affine tranform to Talairach space using nearest neighbor interpolation for label image.
 12. ```mri_convert dataset_directory/img_name/mri/aseg_align.mgz  dataset_directory/img_name/mri/aseg_align.nii.gz``` -> This step converts the transformed label image from .mgz into .nii format.
 
-Note that these steps may take up to **16-30 hours per image** base on our experience. Therefore running these commands in parallel on a server or a cluster is recommended.
+Note that these steps may take up to **12-24 hours per image** base on our experience. Therefore running these commands in parallel on a server or a cluster is recommended.
