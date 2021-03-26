@@ -32,4 +32,7 @@ This is a **PyTorch** implementation of my short paper:
 
 <a href="https://github.com/jeonsworld/ViT-pytorch">ViT-pytorch</a>
 
+## Citation:
+N/A
+
 ### <a href="https://junyuchen245.github.io"> About Me</a>
