@@ -1,5 +1,6 @@
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 # ViT-V-Net: Vision Transformer for Volumetric Medical Image Registration
+
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 
 keywords: vision transformer, convolutional neural networks, image registration
 
