@@ -36,15 +36,16 @@ This is a **PyTorch** implementation of my short paper:
 
 <a href="https://github.com/voxelmorph/voxelmorph">VoxelMorph</a>
 
-## Citation:
 
-        @misc{chen2021vitvnet,
-        title={ViT-V-Net: Vision Transformer for Unsupervised Volumetric Medical Image Registration}, 
-        author={Junyu Chen and Yufan He and Eric C. Frey and Ye Li and Yong Du},
-        year={2021},
-        eprint={2104.06468},
-        archivePrefix={arXiv},
-        primaryClass={eess.IV}
-        }
+If you find this code is useful in your research, please consider to cite:
+    
+    @misc{chen2021vitvnet,
+    title={ViT-V-Net: Vision Transformer for Unsupervised Volumetric Medical Image Registration}, 
+    author={Junyu Chen and Yufan He and Eric C. Frey and Ye Li and Yong Du},
+    year={2021},
+    eprint={2104.06468},
+    archivePrefix={arXiv},
+    primaryClass={eess.IV}
+    }
 
 ### <a href="https://junyuchen245.github.io"> About Me</a>
