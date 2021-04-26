@@ -214,7 +214,7 @@ class Conv3dReLU(nn.Sequential):
             padding=padding,
             bias=not (use_batchnorm),
         )
-        relu = nn.LeakyReLU(inplace=True)
+        relu = nn.ReLU(inplace=True)
 
         bn = nn.BatchNorm3d(out_channels)
 
@@ -348,9 +348,9 @@ class DoubleConv(nn.Module):
             mid_channels = out_channels
         self.double_conv = nn.Sequential(
             nn.Conv3d(in_channels, mid_channels, kernel_size=3, padding=1),
-            nn.LeakyReLU(inplace=True),
+            nn.ReLU(inplace=True),
             nn.Conv3d(mid_channels, out_channels, kernel_size=3, padding=1),
-            nn.LeakyReLU(inplace=True)
+            nn.ReLU(inplace=True)
         )
 
     def forward(self, x):
