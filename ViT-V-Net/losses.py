@@ -412,13 +412,13 @@ class localMutualInformation(torch.nn.Module):
             y_true_patch = torch.reshape(y_true, (y_true.shape[0], y_true.shape[1],
                                             (x + x_r) // self.patch_size, self.patch_size,
                                             (y + y_r) // self.patch_size, self.patch_size))
-            y_true_patch = y_true_patch.permute(0, 1, 2, 4, 3, 5, 6)
+            y_true_patch = y_true_patch.permute(0, 1, 2, 4, 3, 5)
             y_true_patch = torch.reshape(y_true_patch, (-1, self.patch_size ** 2, 1))
 
             y_pred_patch = torch.reshape(y_pred, (y_pred.shape[0], y_pred.shape[1],
                                             (x + x_r) // self.patch_size, self.patch_size,
                                             (y + y_r) // self.patch_size, self.patch_size))
-            y_pred_patch = y_pred_patch.permute(0, 1, 2, 4, 3, 5, 6)
+            y_pred_patch = y_pred_patch.permute(0, 1, 2, 4, 3, 5)
             y_pred_patch = torch.reshape(y_pred_patch, (-1, self.patch_size ** 2, 1))
         
         """Compute MI"""
