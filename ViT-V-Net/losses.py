@@ -347,7 +347,7 @@ class localMutualInformation(torch.nn.Module):
     Local Mutual Information for non-overlapping patches
     """
     def __init__(self, sigma_ratio=1, minval=0., maxval=1., num_bin=32, patch_size=5):
-        super(localMutualInformation3D, self).__init__()
+        super(localMutualInformation, self).__init__()
 
         """Create bin centers"""
         bin_centers = np.linspace(minval, maxval, num=num_bin)
