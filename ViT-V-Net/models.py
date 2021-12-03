@@ -280,7 +280,7 @@ class DecoderCup(nn.Module):
 
     def forward(self, hidden_states, features=None):
         B, n_patch, hidden = hidden_states.size()  # reshape from (B, n_patch, hidden) to (B, h, w, hidden)
-        l, h, w = (self.img_size[0]//2**self.down_factor//self.patch_size[0]), (self.img_size[1]//2**self.down_factor//self.patch_size[0]), (self.img_size[2]//2**self.down_factor//self.patch_size[0])
+        l, h, w = (self.img_size[0]//2**self.down_factor//self.patch_size[0]), (self.img_size[1]//2**self.down_factor//self.patch_size[1]), (self.img_size[2]//2**self.down_factor//self.patch_size[2])
         x = hidden_states.permute(0, 2, 1)
         x = x.contiguous().view(B, hidden, l, h, w)
         x = self.conv_more(x)
