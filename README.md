@@ -2,7 +2,7 @@
 
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a> [![arXiv](https://img.shields.io/badge/arXiv-2104.06468-b31b1b.svg)](https://arxiv.org/abs/2104.06468)
 
-**<img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"> Please also check out our newly proposed registration model :point_right: [TransMorph](https://github.com/junyuchen245/TransMorph_Transformer_for_Medical_Image_Registration)**\
+**<img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30"> Please also check out our newly proposed registration model :point_right: [TransMorph](https://github.com/junyuchen245/TransMorph_Transformer_for_Medical_Image_Registration)**\
     **The pretrained model and the quantitative results of ViT-V-Net on IXI dataset are available here: [IXI_dataset](https://github.com/junyuchen245/TransMorph_Transformer_for_Medical_Image_Registration/blob/main/IXI/TransMorph_on_IXI.md).\
     Additionally, we have made our preprocessed IXI dataset publicly available!**
 
